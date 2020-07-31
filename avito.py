@@ -18,7 +18,7 @@ def get_total_pages(html):
 
 
 def write_csv(data):
-    with open('avitooo.csv', 'a', encoding='utf8') as f:
+    with open('avito.csv', 'a', encoding='utf8') as f:
         writer = csv.writer(f)
 
         writer.writerow((data['title'],
