@@ -19,7 +19,7 @@ def refind(s):
 
 def write_csv(data):
     with open('plugins.csv', 'a') as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, delimiter=';')     # delimiter=';' позволяет разносить данные файла по разным столбцам 
 
         writer.writerow((data['name'],
                          data['url'],
