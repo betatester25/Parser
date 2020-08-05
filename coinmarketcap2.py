@@ -19,6 +19,7 @@ def write_csv(data):
                         data['price']])
 
 
+
 def get_data(html):
     soup = BeautifulSoup(html, 'lxml')
     trs = soup.find('div', class_='cmc-table__table-wrapper-outer').find_next_sibling().find_next_sibling().\
